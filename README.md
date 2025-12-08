@@ -1,5 +1,5 @@
-# Orion-App-Installer
-Orion App Installer System, for use on "Web Desktops".
+# Orion-App-System
+Orion App System, for use on "Web Desktops".
 
 THIS IS STRICTLY FOR DEVELOPERS! 
 
