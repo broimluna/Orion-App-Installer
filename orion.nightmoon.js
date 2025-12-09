@@ -261,7 +261,8 @@ function createAppWindow(metadata, content, autoOpen) {
     // Create the DOM element with an iframe
     const newApp = $(`
     <div id="windowOrion${title}" class="window" onclick="focusWindow('Orion${title}')" style="top:10px;left:10px;">
-       <div id="winOrion${title}-bar" class="window_bar noIcon">
+       <div id="winOrion${title}-bar" ondblclick="maxiWindow('Orion${title}');" class="window_bar resizeableWinBar">
+	      <div class="WindowBarIcon IconSize16" id="IconExecutable" ondblclick="closeWindow('Orion${title}');"></div>
 	      <span class="StringOrion${title}">${title}</span>
 	      <div id="close" title="" class="winBarButton" onclick="closeWindow('Orion${title}');"></div>
           <div id="maximize" class="winBarButton" onclick="maxiWindow('Orion${title}');"></div>
@@ -282,9 +283,6 @@ $( newApp ).draggable({
 cancel: "#windowcontent, #themePreview, .winBarButton"
 });
 
-
-    //setupWindow(newApp[0]); <-- replace this with a function that setups the window (draggable, title, buttons, etc...)
-    //setupTaskbar(newApp[0]); <-- replace this with a function that setups the taskbar panel (icon, taskbar icon toggle)
     const newTaskband = `
     <div id="panelOrion${title}" onclick="focusWindow('Orion${title}');restoreWindow('Orion${title}');" class="taskband" style="display: none;">
     <div class="TaskbandIcon IconSize16" id="IconExecutable"></div>
@@ -319,7 +317,8 @@ function createAppManagerWindow() {
     // This is the HTML from the middle of your original createAppWindow
     const managerApp = $(`
     <div id="windowOrionApp" class="window" onclick="focusWindow('OrionApp')" style="top:10px;left:10px;">
-        <div id="winOrionApp-bar" class="window_bar noIcon">
+       <div id="winOrionApp-bar" ondblclick="maxiWindow('OrionApp');" class="window_bar resizeableWinBar">
+	      <div class="WindowBarIcon IconSize16" id="IconExecutable" ondblclick="closeWindow('OrionApp');"></div>			
             <span class="StringOrionApp">Orion App System</span>
             <div id="close" title="" class="winBarButton" onclick="closeWindow('OrionApp');"></div>
             <div id="maximize" class="winBarButton" onclick="maxiWindow('OrionApp');"></div>
