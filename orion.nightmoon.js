@@ -1,6 +1,7 @@
 $.getScript("https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js")
 
 /* --- .ori (Orion App Install) File System (ZIP based) --- */
+function addOrionStart() {
 const startMenuSection = `
 <span id="StartLinkOrion" class="startLink"><span class="StringStartMenu3">Orion</span>
 <div id="IconProgman" class="StartMenuMIcon IconSize32"></div>
@@ -14,6 +15,7 @@ const startMenuSection = `
 const $RimetApps = $('#RimetApps');
 const targetElement = $RimetApps.children(':nth-child(3)');
 targetElement.after(startMenuSection);
+}
 
 async function handleOriFile(input) {
     const file = input.files[0];
@@ -366,6 +368,9 @@ function createAppManagerWindow() {
         }
     });
 }
-    console.log("Orion App System - Initialized")
+function orionInit() {
+    addOrionStart();
     createAppManagerWindow();
     loadInstalledApps();
+    console.log("Orion App System - Initialized")
+}
