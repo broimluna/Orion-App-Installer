@@ -1,0 +1,38 @@
+[
+    {
+        "title": "Draw",
+        "description": "A fast and simple drawing app.",
+        "ori_url": "https://raw.githubusercontent.com/broimluna/Orion-App-System/refs/heads/main/apps/Draw.ori",
+        "recommended": false
+    },
+    {
+        "title": "Notepad",
+        "description": "Useful and simple text editor for notes.",
+        "ori_url": "https://raw.githubusercontent.com/broimluna/Orion-App-System/refs/heads/main/apps/Notepad.ori",
+        "recommended": true
+    },
+    {
+        "title": "Calculator",
+        "description": "A standard calculator for arithmetic operations.",
+        "ori_url": "https://raw.githubusercontent.com/broimluna/Orion-App-System/refs/heads/main/apps/Calculator.ori",
+        "recommended": true
+    },
+    {
+        "title": "Calendar",
+        "description": "Check the calendar.",
+        "ori_url": "https://raw.githubusercontent.com/broimluna/Orion-App-System/refs/heads/main/apps/Calendar.ori",
+        "recommended": false
+    },
+    {
+        "title": "Minesweeper",
+        "description": "Minesweeper game for some classic fun.",
+        "ori_url": "https://raw.githubusercontent.com/broimluna/Orion-App-System/refs/heads/main/apps/Minesweeper.ori",
+        "recommended": true
+    },
+    {
+        "title": "Terminal",
+        "description": "Access the command line interface.",
+        "ori_url": "https://raw.githubusercontent.com/broimluna/Orion-App-System/refs/heads/main/apps/Terminal.ori",
+        "recommended": true
+    }
+]
